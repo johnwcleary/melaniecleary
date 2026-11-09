@@ -288,6 +288,11 @@ h1, h2 { text-wrap: balance; }
   background: linear-gradient(transparent 35%, rgba(0, 0, 0, .65));
 }
 
+/* The project you're on: title centred on an even shade. */
+@media (hover: hover) {
+  .more-work .card[aria-current="page"] .card-title { align-items: center; background: rgba(0, 0, 0, .45); }
+}
+
 @media (max-width: 900px) {
   .more-work .work-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 480px; }
 }
