@@ -1,0 +1,220 @@
+{
+  "site": {
+    "name": "Melanie Cleary",
+    "tagline": "Creative Director",
+    "description": "Melanie Cleary is a Creative Director with an art direction background, based in New York City. This site is a collection of her work.",
+    "url": "https://www.melaniecleary.com"
+  },
+
+  "about": {
+    "photo": "about-mel.jpg",
+    "body": [
+      "Hi!",
+      "I’m Mel, a Creative Director with an art direction background living and working in New York City. I graduated with a BFA in Visual Communications from the University of Delaware in 2014.",
+      "In my free time I’m either doodling houses, working my way through all of the Oscar nominated movies, making soup, or reading a book."
+    ],
+    "facts": [
+      ["Currently working on", "Mondelez"],
+      ["Past clients", "Invisalign, American Express, Facebook, AstraZeneca, Pfizer, Comcast, Audible for Business"],
+      ["Past experience", "Vice, Wieden+Kennedy"]
+    ]
+  },
+
+  "projects": [
+    {
+      "slug": "chips-ahoy",
+      "title": "Chips Ahoy!",
+      "thumb": "thumb-chips-ahoy.webp",
+      "blocks": [
+        {"type": "video", "id": "1002847484", "h": "83ff141157", "ratio": "16/9", "title": "Kekefied Cookie"},
+        {"type": "video", "id": "1002847526", "h": "464d11a326", "ratio": "16/9", "title": "Kekefied Name"},
+        {"type": "video", "id": "1002847269", "h": "1042121e0f", "ratio": "16/9", "title": "Check Chip Out"},
+        {"type": "row", "items": [
+          {"type": "video", "id": "1002847293", "h": "f3f08bb634", "ratio": "9/16", "title": "This is Keke Palmer"},
+          {"type": "video", "id": "1002847412", "h": "6c02a0ecae", "ratio": "9/16", "title": "What’s in Keke’s Bag?"}
+        ]}
+      ]
+    },
+    {
+      "slug": "invisalign",
+      "title": "Invisalign",
+      "subtitle": "Invis is Drama Free",
+      "thumb": "thumb-invisalign.jpg",
+      "blocks": [
+        {"type": "text", "html": [
+          "In a world… where Braces are Drama, Invisalign is the drama free option to straighten your teeth.",
+          "To highlight all of the ways braces are drama we turned to the most dramatic medium of all: MOVIES. We created what looked like trailers for upcoming new releases but the plot of every movie was centered around the drama of braces. With trailers for 8 totally different genres of movies we created something for every teen on the internet — from a disaster movie to a movie musical.",
+          "We paired our trailers with animated movie posters tailored for social placements and worked with creators on TikTok to create their own movie trailers, tapping into a behavior that was already gaining traction on social platforms.",
+          "And the trailers found their audience with tangible results: 127% increase in views from our target, 315% increase in clickthrough rate and 404k unique website visits from teens."
+        ]},
+        {"type": "awards", "items": [
+          ["Clio Health Awards", "🥉 Bronze — Creative Effectiveness"],
+          ["Shorty Awards", "🏆 Winner/Highest Honor — Short Form Video; 🥇 Gold — Healthcare and Pharma; 🥇 Gold — Integrated Campaign"],
+          ["Addys — NY District 2", "🥈 Silver — Social Media Campaign; 🥈 Silver — Internet Commercial Campaign"],
+          ["National Addys", "🥈 Silver — Internet Commercial Campaign"],
+          ["Reggies", "🥈 Silver — Age Targeted Marketing"]
+        ]},
+        {"type": "text", "html": [
+          "Our trailer for the fictional flick, <em>Vampires in Wires</em>, premiered in a Vevo Takeover on YouTube for Olivia Rodrigo’s hit song of the summer, “vampire.” And our trailer for the fictional action flick <em>Down to the Wire</em> premiered on TikTok around the launch of Mission Impossible: Dead Reckoning to integrate Invisalign into pre-existing cultural conversations."
+        ]},
+        {"type": "video", "id": "870771555", "h": "dcc811c5ab", "ratio": "354/240", "title": "Vampires in Wires: Vevo Takeover"},
+        {"type": "text", "html": ["We cut our trailers into :06s, :15s and :30s for different media placements."]},
+        {"type": "video", "id": "903384930", "ratio": "16/9", "title": "Concession Stand Blues"},
+        {"type": "video", "id": "903384957", "ratio": "16/9", "title": "Wirecrossed Lovers"},
+        {"type": "video", "id": "903384946", "ratio": "16/9", "title": "Down to the Wire"},
+        {"type": "row", "items": [
+          {"type": "video", "id": "870779449", "h": "3aff30304a", "ratio": "9/16", "title": "Brace For Impact"},
+          {"type": "video", "id": "870783842", "h": "0cf2a622d6", "ratio": "9/16", "title": "Popped Quiz"},
+          {"type": "video", "id": "870782199", "h": "0edefd0c09", "ratio": "9/16", "title": "Breaking The Band"}
+        ]}
+      ]
+    },
+    {
+      "slug": "belvita-rise-and-thrive",
+      "title": "belVita: Rise & Thrive",
+      "thumb": "thumb-belvita-rise-and-thrive.gif",
+      "blocks": [
+        {"type": "text", "html": ["A new 360º campaign for belVita Breakfast Biscuits with an aim to bring humor into the breakfast space while also letting consumers in on what a breakfast biscuit <em>actually</em> is."]},
+        {"type": "video", "id": "714192034", "h": "3fb3f32b64", "ratio": "16/9", "title": "Entrance :30"},
+        {"type": "video", "id": "714191888", "h": "1ec4096385", "ratio": "16/9", "title": "Entrance :15"},
+        {"type": "text", "html": ["In addition to our TVC and digital :15 and :30 we created assets specifically for social — including an asset that hacked the IG/Facebook “Collection” unit."]},
+        {"type": "row", "items": [
+          {"type": "video", "id": "714205200", "h": "648d3cd287", "ratio": "4/5", "title": "Don’t Be Carl"},
+          {"type": "video", "id": "714196736", "h": "868fac92e9", "ratio": "4/5", "title": "Coffee Collection"}
+        ]},
+        {"type": "text", "html": ["Heavy-hitting benefit and product focused assets were created with CG and 3D for both YouTube and social to help consumers have a better understanding of belVita, since breakfast biscuits aren’t too common in the US."]},
+        {"type": "row", "items": [
+          {"type": "video", "id": "714192242", "h": "922611e616", "ratio": "4/5", "title": "Baked Break"},
+          {"type": "video", "id": "714216833", "h": "f0a237ae50", "ratio": "4/5", "title": "belVita + Coffee"},
+          {"type": "video", "id": "714192311", "h": "2e8759a426", "ratio": "4/5", "title": "Endless Break"}
+        ]}
+      ]
+    },
+    {
+      "slug": "trident-trae-young",
+      "title": "Trident + Trae Young",
+      "thumb": "thumb-trident-trae-young.png",
+      "blocks": [
+        {"type": "text", "html": [
+          "For Mental Health Awareness month in 2022 Trident was proud to assist NBA player Trae Young and his foundation, Trae Young Family Foundation (TYFF), in their mission to support all people and their mental health.",
+          "The content was shared on social by both Trident and Trae Young. Additionally, a suite of assets were created for in-store viewing in Walmarts around the country that were selling limited edition TYFF Trident packs."
+        ]},
+        {"type": "video", "id": "714170794", "h": "6d017e9854", "ratio": "16/9", "title": "Refresh"},
+        {"type": "row", "items": [
+          {"type": "video", "id": "714170422", "h": "09d4adadd6", "ratio": "9/16", "title": "Behind the Refresh"},
+          {"type": "video", "id": "714170603", "h": "26ca0cf912", "ratio": "9/16", "title": "Pause"}
+        ]},
+        {"type": "row", "align": "center", "items": [
+          {"type": "video", "id": "714170504", "h": "8bb1bcc93f", "ratio": "4/5", "title": "Out of Bounds"},
+          {"type": "text", "html": ["“Out of Bounds” and “Pause” are assets created with social habits in mind — designed to hack the feed and interrupt people’s endless scrolling."]}
+        ]},
+        {"type": "credits", "items": [["Copywriter", "Frank Moore"], ["Creative Director", "Matt McKay"]]}
+      ]
+    },
+    {
+      "slug": "amex-wimbledon",
+      "title": "AmEx + Wimbledon",
+      "thumb": "thumb-amex-wimbledon.png",
+      "blocks": [
+        {"type": "text", "html": [
+          "2019 was American Express’ first year as an official sponsor of The Championships, Wimbledon.",
+          "Featuring 3-time Grand Slam Winner, Andy Murray <em>and</em> a real grass arm chair + footrest: this content was created to promote on-site offers and celebrate the brand new partnership on both US and UK channels."
+        ]},
+        {"type": "row", "items": [
+          {"type": "video", "id": "345779159", "ratio": "4/5", "title": "For Every Break"},
+          {"type": "video", "id": "345779153", "ratio": "4/5", "title": "For Every Ear"},
+          {"type": "video", "id": "345779140", "ratio": "4/5", "title": "For Every Fave"}
+        ]},
+        {"type": "credits", "items": [["Copywriter", "Michael Sojka"], ["Creative Director", "Zoë Bell"]]}
+      ]
+    },
+    {
+      "slug": "shoppingsmallwithshaq",
+      "title": "Shopping Small with Shaq",
+      "subtitle": "+ Friends",
+      "thumb": "thumb-shoppingsmallwithshaq.gif",
+      "blocks": [
+        {"type": "text", "html": [
+          "A content series to promote Small Business Saturday with Shaq leading the charge.",
+          "We captured him in real small businesses across the US with his friends Kendrick Lamar, Jeremy Piven, and Wanda Sykes."
+        ]},
+        {"type": "video", "id": "361206726", "ratio": "16/9", "title": "Luscious Lamar"},
+        {"type": "video", "id": "361206770", "ratio": "16/9", "title": "Tiny Bed"},
+        {"type": "video", "id": "361206684", "ratio": "16/9", "title": "Giant Friend"},
+        {"type": "video", "id": "361206743", "ratio": "16/9", "title": "Sniff"},
+        {"type": "video", "id": "361206650", "ratio": "16/9", "title": "Basket"},
+        {"type": "text", "html": ["We leveraged our footage to create GIFs for social and online placements."]},
+        {"type": "row", "items": [
+          {"type": "image", "src": "shaq-gif-1.gif", "alt": "Shaq GIF for social"},
+          {"type": "image", "src": "shaq-gif-10.gif", "alt": "Shaq GIF for social"},
+          {"type": "image", "src": "shaq-gif-12.gif", "alt": "Shaq GIF for social"},
+          {"type": "image", "src": "shaq-gif-6.gif", "alt": "Shaq GIF for social"},
+          {"type": "image", "src": "shaq-gif-15.gif", "alt": "Shaq GIF for social"},
+          {"type": "image", "src": "shaq-gif-asset.gif", "alt": "Shaq GIF for social"}
+        ], "cols": 3}
+      ]
+    },
+    {
+      "slug": "belvitadipitsipit",
+      "title": "belVita: Dip It Sip It",
+      "thumb": "thumb-belvitadipitsipit.gif",
+      "blocks": [
+        {"type": "text", "html": ["A new TVC campaign aimed to make all coffee-drinkers also biscuit-eaters."]},
+        {"type": "video", "id": "558735700", "ratio": "16/9", "title": "Dip It Sip It"},
+        {"type": "credits", "items": [["Copywriter", "Michael Sojka"], ["Creative Directors", "Jenny Awasano + Zoë Bell"]]}
+      ]
+    },
+    {
+      "slug": "pay-it-plan-it",
+      "title": "Pay It Plan It",
+      "kicker": "American Express",
+      "thumb": "thumb-pay-it-plan-it.jpg",
+      "blocks": [
+        {"type": "text", "html": ["A 360 campaign ranging from pre-roll and media partnerships to social content and a photo library for the American Express product Pay It Plan It."]},
+        {"type": "video", "id": "361350115", "ratio": "16/9", "title": "Pay It Plan It: Living Room"},
+        {"type": "video", "id": "361350069", "ratio": "16/9", "title": "Pay It Plan It: Concert"},
+        {"type": "video", "id": "361350033", "ratio": "16/9", "title": "Pay It Plan It: Camping"},
+        {"type": "video", "id": "361350148", "ratio": "16/9", "title": "Pay It Plan It: Cake"},
+        {"type": "text", "html": ["Targeted and seasonal display units were created to highlight different ways you might use the Pay It Plan It tool."]},
+        {"type": "image", "src": "pipi-nye.png", "alt": "New Year’s Eve Pay It Plan It display unit"},
+        {"type": "image", "src": "pipi-holiday.png", "alt": "Holiday Pay It Plan It display unit"},
+        {"type": "text", "html": ["A sampling from our Pay It Plan It photo library:"]},
+        {"type": "gallery", "items": [
+          {"src": "pipi-photo-1.jpg", "alt": "Friendsgiving"},
+          {"src": "pipi-photo-2.jpg", "alt": "Accent it, lounge it"},
+          {"src": "pipi-photo-3.jpg", "alt": "Back to school"},
+          {"src": "pipi-photo-4.jpg", "alt": "Celebrate it, serve it"},
+          {"src": "pipi-photo-5.jpg", "alt": "Groove it, spin it"},
+          {"src": "pipi-photo-6.jpg", "alt": "Celebrate it, serve it"},
+          {"src": "pipi-photo-7.jpg", "alt": "Hip it, snap it"},
+          {"src": "pipi-photo-8.jpg", "alt": "Snack it, grill it"},
+          {"src": "pipi-photo-9.jpg", "alt": "Wear it, rev it"}
+        ]}
+      ]
+    },
+    {
+      "slug": "shop-small",
+      "title": "Shop Small",
+      "kicker": "American Express",
+      "thumb": "thumb-shop-small.jpg",
+      "blocks": [
+        {"type": "text", "html": [
+          "We all know those special moments we experience in small businesses: when someone knows your “usual,” the guy you never talk to but give a nod to every Friday at the local pub, the corner booth at your fave place. We sought to recreate those moments and captured them in real small businesses around New York City to get people excited to go out and Shop Small on Small Business Saturday.",
+          "Our content ran as pre-roll and social — both general and hyper-targeted."
+        ]},
+        {"type": "row", "cols": 2, "items": [
+          {"type": "video", "id": "361200900", "ratio": "4/5", "title": "SBS Record Store"},
+          {"type": "video", "id": "361200871", "ratio": "4/5", "title": "SBS Pizza Parlor"},
+          {"type": "video", "id": "361200828", "ratio": "4/5", "title": "SBS Coffee Shop"},
+          {"type": "video", "id": "361200784", "ratio": "4/5", "title": "SBS Nail Salon"}
+        ]},
+        {"type": "text", "html": ["Our geo-targeted social ads populated with timely data based on favorite small businesses in the targeted location and trending interests in those areas."]},
+        {"type": "row", "items": [
+          {"type": "video", "id": "361203410", "ratio": "4/5", "title": "Geo-Targeted: Manhattan"},
+          {"type": "video", "id": "361203440", "ratio": "4/5", "title": "Geo-Targeted: East Austin"},
+          {"type": "video", "id": "361203472", "ratio": "4/5", "title": "Geo-Targeted: The Fillmore"}
+        ]}
+      ]
+    }
+  ]
+}
