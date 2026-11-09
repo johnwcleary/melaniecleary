@@ -82,7 +82,7 @@ def video(b):
     w, h = b["ratio"].split("/")
     tall = " is-tall" if int(h) > int(w) else ""
     return (
-        f'<figure class="media video{tall}" style="aspect-ratio:{b["ratio"]};--r:{b["ratio"]}">'
+        f'<figure class="media video{tall}" style="aspect-ratio:{b["ratio"]}">'
         f'<iframe src="{src}" title="{esc(b["title"])}" loading="lazy" '
         f'allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></figure>'
     )
