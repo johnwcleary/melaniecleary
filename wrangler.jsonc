@@ -1,0 +1,14 @@
+{
+  "name": "melaniecleary",
+  "compatibility_date": "2026-11-09",
+  // Assets-only Worker: no `main`, no bindings. Every request is served from
+  // the static-asset path, straight out of site/ (the generated pages are committed).
+  "assets": {
+    "directory": "./site",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  },
+  // Workers Builds runs `wrangler preview` for pull-request branches, which
+  // needs this block. Empty is fine: previews reuse the settings above.
+  "previews": {}
+}
