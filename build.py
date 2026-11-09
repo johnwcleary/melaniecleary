@@ -22,10 +22,15 @@ FONTS = "https://fonts.googleapis.com/css2?family=Chivo:wght@400;700;900&family=
 esc = html.escape
 
 
-def page(title, body, *, depth, active, description=None, image=None, body_class="", base=None):
+def page(title, body, *, depth, active, description=None, image=None, body_class="", base=None, path=None):
     up = base if base is not None else "../" * depth
     full_title = f"{title} — {SITE['name']}" if title else f"{SITE['name']} — {SITE['tagline']}"
     desc = esc(description or SITE["description"])
+    # Both melaniecleary.com and www serve the site; this tells search engines which is the main one.
+    canonical = (
+        f'<link rel="canonical" href="{SITE["url"]}{path}">\n<meta property="og:url" content="{SITE["url"]}{path}">'
+        if path is not None else ""
+    )
     og_image = f'<meta property="og:image" content="{SITE["url"]}/assets/img/{image}">' if image else ""
     current = ' aria-current="page"'
 
@@ -42,6 +47,7 @@ def page(title, body, *, depth, active, description=None, image=None, body_class
 <meta property="og:title" content="{esc(full_title)}">
 <meta property="og:description" content="{desc}">
 <meta property="og:type" content="website">
+{canonical}
 {og_image}
 <link rel="icon" href="{up}assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -134,7 +140,7 @@ def grid(up, current=None, eager=False):
 
 def work_grid():
     body = f'<h1 class="visually-hidden">Selected work</h1><div class="grid-wrap">{grid("", eager=True)}</div>'
-    return page(None, body, depth=0, active="work", image=PROJECTS[0]["thumb"], body_class="home")
+    return page(None, body, depth=0, active="work", image=PROJECTS[0]["thumb"], body_class="home", path="/")
 
 
 def project_page(i, p):
@@ -154,7 +160,7 @@ def project_page(i, p):
   {grid(up, current=p['slug'])}
 </nav>"""
     title = p["title"] + (f": {p['subtitle']}" if p.get("subtitle") and not p["subtitle"].startswith("+") else "")
-    return page(title, body, depth=1, active="work", description=desc, image=p["thumb"])
+    return page(title, body, depth=1, active="work", description=desc, image=p["thumb"], path=f"/{p['slug']}/")
 
 
 def about_page():
@@ -169,7 +175,7 @@ def about_page():
   </div>
   {image(a['photo'], 'Melanie Cleary', '../', 'about-photo')}
 </section>"""
-    return page("About", body, depth=1, active="about", image=a["photo"])
+    return page("About", body, depth=1, active="about", image=a["photo"], path="/about/")
 
 
 def not_found():
