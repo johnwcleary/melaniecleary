@@ -163,10 +163,16 @@ def project_page(i, p):
     return page(title, body, depth=1, active="work", description=desc, image=p["thumb"], path=f"/{p['slug']}/")
 
 
+def no_orphan(text):
+    """Escape text and tie its last two words together so a line never ends on one word."""
+    head, _, last = esc(text).rpartition(" ")
+    return f"{head}&nbsp;{last}" if head else last
+
+
 def about_page():
     a = DATA["about"]
-    paras = "".join(f"<p>{esc(t)}</p>" for t in a["body"])
-    facts = "".join(f"<div><dt>{esc(k)}</dt><dd>{esc(v)}</dd></div>" for k, v in a["facts"])
+    paras = "".join(f"<p>{no_orphan(t)}</p>" for t in a["body"])
+    facts = "".join(f"<div><dt>{esc(k)}</dt><dd>{no_orphan(v)}</dd></div>" for k, v in a["facts"])
     body = f"""<section class="about wrap">
   <div class="about-text">
     <h1 class="visually-hidden">About</h1>

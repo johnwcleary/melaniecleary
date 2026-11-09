@@ -196,6 +196,9 @@ figure { margin: 0; }
 
 .prose { max-width: 70ch; }
 .prose p { margin: 0 0 1em; }
+/* Avoid single words stranded on the last line. */
+p, dd, li { text-wrap: pretty; }
+h1, h2 { text-wrap: balance; }
 .prose p:last-child { margin-bottom: 0; }
 .prose a { text-underline-offset: 3px; }
 .prose a:hover { color: var(--hover); }
