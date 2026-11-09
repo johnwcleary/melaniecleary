@@ -119,23 +119,26 @@ def block(b, up):
     raise ValueError(f"unknown block type {t!r}")
 
 
-def work_grid():
+def grid(up, current=None, eager=False):
     cards = []
     for i, p in enumerate(PROJECTS):
-        loading = "eager" if i < 3 else "lazy"
+        loading = "eager" if eager and i < 3 else "lazy"
+        here = ' aria-current="page"' if p["slug"] == current else ""
         cards.append(
-            f'<li><a class="card" href="{p["slug"]}/">'
-            f'<img src="assets/img/{p["thumb"]}" alt="" loading="{loading}" decoding="async">'
+            f'<li><a class="card" href="{up}{p["slug"]}/"{here}>'
+            f'<img src="{up}assets/img/{p["thumb"]}" alt="" loading="{loading}" decoding="async">'
             f'<span class="card-title">{esc(p["title"])}</span></a></li>'
         )
-    body = f'<h1 class="visually-hidden">Selected work</h1><ul class="work-grid wrap">{"".join(cards)}</ul>'
+    return f'<ul class="work-grid">{"".join(cards)}</ul>'
+
+
+def work_grid():
+    body = f'<h1 class="visually-hidden">Selected work</h1><div class="grid-wrap">{grid("", eager=True)}</div>'
     return page(None, body, depth=0, active="work", image=PROJECTS[0]["thumb"], body_class="home")
 
 
 def project_page(i, p):
     up = "../"
-    prev_p = PROJECTS[i - 1]
-    next_p = PROJECTS[(i + 1) % len(PROJECTS)]
     kicker = f'<p class="kicker">{esc(p["kicker"])}</p>' if p.get("kicker") else ""
     sub = f'<p class="subtitle">{esc(p["subtitle"])}</p>' if p.get("subtitle") else ""
     blocks = "\n".join(block(b, up) for b in p["blocks"])
@@ -147,10 +150,8 @@ def project_page(i, p):
 {blocks}
   </div>
 </article>
-<nav class="pager wrap" aria-label="More work">
-  <a class="pager-link prev" href="{up}{prev_p['slug']}/"><span>Previous</span><strong>{esc(prev_p['title'])}</strong></a>
-  <a class="pager-all" href="{up}">All work</a>
-  <a class="pager-link next" href="{up}{next_p['slug']}/"><span>Next</span><strong>{esc(next_p['title'])}</strong></a>
+<nav class="more-work grid-wrap" aria-label="All work">
+  {grid(up, current=p['slug'])}
 </nav>"""
     title = p["title"] + (f": {p['subtitle']}" if p.get("subtitle") and not p["subtitle"].startswith("+") else "")
     return page(title, body, depth=1, active="work", description=desc, image=p["thumb"])
