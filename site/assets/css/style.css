@@ -262,8 +262,35 @@ figure { margin: 0; }
 
 .more-work {
   margin-top: clamp(56px, 8vw, 96px);
-  padding-top: clamp(32px, 4vw, 48px);
+  padding-top: clamp(24px, 3vw, 36px);
   border-top: 1px solid var(--line);
+}
+
+/* A footer strip: all nine in one row of small tiles, greyed out until hovered. */
+.more-work .work-grid { grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 4px; }
+
+.more-work .card img {
+  filter: grayscale(1);
+  opacity: .45;
+  transition: filter .3s, opacity .3s, transform .6s cubic-bezier(.2, .7, .2, 1);
+}
+.more-work .card:hover img,
+.more-work .card:focus-visible img { filter: none; opacity: 1; }
+
+/* Title sits on a bottom fade so the colour still shows through on hover. */
+.more-work .card-title {
+  font-size: 12px;
+  padding: 6px;
+  align-items: flex-end;
+  background: linear-gradient(transparent 35%, rgba(0, 0, 0, .65));
+}
+
+@media (max-width: 900px) {
+  .more-work .work-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 480px; }
+}
+
+@media (hover: none) {
+  .more-work .card-title { font-size: 11px; padding: 4px 0 8px; line-height: 1.25; background: none; text-align: left; }
 }
 
 /* About ------------------------------------------------------------------ */
