@@ -217,6 +217,7 @@
     },
     {
       "slug": "belvitadipitsipit",
+      "hidden": true,
       "title": "belVita: Dip It Sip It",
       "thumb": "thumb-belvitadipitsipit.gif",
       "blocks": [
@@ -227,6 +228,7 @@
     },
     {
       "slug": "pay-it-plan-it",
+      "hidden": true,
       "title": "Pay It Plan It",
       "kicker": "American Express",
       "thumb": "thumb-pay-it-plan-it.jpg",
@@ -255,6 +257,7 @@
     },
     {
       "slug": "shop-small",
+      "hidden": true,
       "title": "Shop Small",
       "kicker": "American Express",
       "thumb": "thumb-shop-small.jpg",

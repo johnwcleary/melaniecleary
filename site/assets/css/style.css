@@ -271,8 +271,8 @@ h1, h2 { text-wrap: balance; }
 
 /* A footer strip: every project in small tiles, greyed out until hovered.
    One row on wide screens, two on mid-size ones. */
-.more-work .work-grid { grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 4px; }
-@media (max-width: 1400px) { .more-work .work-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+.more-work .work-grid { grid-template-columns: repeat(var(--count), minmax(0, 1fr)); gap: 4px; }
+@media (max-width: 1400px) { .more-work .work-grid { grid-template-columns: repeat(var(--mid), minmax(0, 1fr)); } }
 
 .more-work .card img {
   filter: grayscale(1);

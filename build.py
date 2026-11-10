@@ -126,8 +126,10 @@ def block(b, up):
 
 
 def grid(up, current=None, eager=False):
+    # Projects marked "hidden" keep their pages but don't appear in the grids.
+    shown = [p for p in PROJECTS if not p.get("hidden")]
     cards = []
-    for i, p in enumerate(PROJECTS):
+    for i, p in enumerate(shown):
         loading = "eager" if eager and i < 3 else "lazy"
         here = ' aria-current="page"' if p["slug"] == current else ""
         cards.append(
@@ -135,7 +137,9 @@ def grid(up, current=None, eager=False):
             f'<img src="{up}assets/img/{p["thumb"]}" alt="" loading="{loading}" decoding="async">'
             f'<span class="card-title">{esc(p["title"])}</span></a></li>'
         )
-    return f'<ul class="work-grid">{"".join(cards)}</ul>'
+    # The footer strip fits every tile in one row, or two rows when there are many.
+    mid = len(shown) if len(shown) <= 9 else -(-len(shown) // 2)
+    return f'<ul class="work-grid" style="--count:{len(shown)};--mid:{mid}">{"".join(cards)}</ul>'
 
 
 def work_grid():

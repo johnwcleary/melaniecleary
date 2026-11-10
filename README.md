@@ -17,6 +17,8 @@ site/          ← the finished website (this folder is what gets deployed)
 2. Run `python3 build.py`.
 3. Preview with `python3 -m http.server 8742 --directory site` and open http://localhost:8742.
 
+To take a project off the homepage and footer grids without deleting its page, add `"hidden": true` to it. Remove that line to bring it back.
+
 Block types you can use inside a project's `blocks`:
 
 | type      | fields |
