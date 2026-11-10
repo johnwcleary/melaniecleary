@@ -22,10 +22,71 @@
 
   "projects": [
     {
+      "slug": "walmart-anna-faris",
+      "title": "Walmart: Anna Faris’ Day In",
+      "thumb": "thumb-walmart-anna-faris.webp",
+      "blocks": [
+        {"type": "text", "html": [
+          "To launch Walmart’s new Rx Express Delivery service, we took a page out of the most iconic sick day in movie history, <em>Ferris Bueller’s Day Off</em> — giving Walmart’s newest delivery offering the Hollywood treatment. We tapped Anna Faris to bring the humor, connect with our audience, and give a familiar movie (and a conveniently similar name) a new spin.",
+          "The result was an ode to staying home, doing absolutely nothing, and letting Walmart handle the rest. Ferris would be proud.",
+          "And audiences were into it. The campaign outperformed historical brand benchmarks, with over 50% of viewers watching the full 60-second spot. It was also ranked the #9 most recalled ad in the US in Q3 2025 by Cubery.",
+          "And for anyone paying close attention, we snuck in some Easter eggs from the original movie. Bueller? Bueller? How many can you spot?"
+        ]},
+        {"type": "video", "id": "1245538459", "h": "aabd69b04f", "ratio": "16/9", "title": "Anna Faris’ Day In :60"},
+        {"type": "row", "items": [
+          {"type": "video", "id": "1245528100", "h": "258bf522eb", "ratio": "9/16", "title": "Fit Check"},
+          {"type": "video", "id": "1245527158", "h": "59809b7bc7", "ratio": "9/16", "title": "Sick Day Tips"}
+        ]}
+      ]
+    },
+    {
+      "slug": "walmart-health-and-wellness",
+      "title": "Walmart: Health & Wellness",
+      "thumb": "thumb-walmart-health-and-wellness.jpg",
+      "blocks": [
+        {"type": "text", "html": [
+          "Coming off the launch of Walmart’s Who Knew? campaign, people were starting to realize just how much Walmart has to offer. But there was another side of Walmart we wanted them to get to know too… the wellness side. From Rx delivery and sea moss to flu shots and glasses, Walmart had a lot more going on than people might expect.",
+          "Because just like the people who shop there, Walmart is multifaceted. So we leaned into the duality of our customers (and Walmart itself) to show that there’s more to everyone than meets the eye.",
+          "Enter our cast of characters: Benji, our punk-rock doggy daddy who’s also a chill yogi and green smoothie sipper. Meema, our crochet champ who doubles as a boot-scootin’ baddie. And Vicky, our avid reader who also knows how to paint the town red.",
+          "Three very different personalities, each with more than one side. A little reminder that whatever side of yourself you’re leaning into today, Walmart has something for that, too."
+        ]},
+        {"type": "video", "id": "1245543058", "h": "da318dfb3d", "ratio": "16/9", "title": "Benji :30"},
+        {"type": "row", "items": [
+          {"type": "video", "id": "1245548204", "h": "1277b060ef", "ratio": "16/9", "title": "Meema :15"},
+          {"type": "video", "id": "1245549548", "h": "b50aa2bc9e", "ratio": "16/9", "title": "Vicky :15"}
+        ]},
+        {"type": "text", "html": [
+          "We kept the dual personalities going on social, tapping creator Kristen Marie to do what she does best: lean into the different personalities she portrays in her content, each with their own wellness needs… and quirks."
+        ]},
+        {"type": "row", "items": [
+          {"type": "video", "id": "1245549231", "h": "b05e875284", "ratio": "9/16", "title": "Kristen Marie: Assortment"},
+          {"type": "video", "id": "1245548205", "h": "39a4d156b8", "ratio": "9/16", "title": "Kristen Marie: Immunization"},
+          {"type": "video", "id": "1245549549", "h": "85501f12b1", "ratio": "9/16", "title": "Kristen Marie: Vision"}
+        ]}
+      ]
+    },
+    {
+      "slug": "walmart-fire-dept-coffee",
+      "title": "Walmart: Fire Dept. Coffee",
+      "thumb": "thumb-walmart-fire-dept-coffee.jpg",
+      "blocks": [
+        {"type": "text", "html": [
+          "Walmart is a big supporter of American businesses. In fact, most of what Walmart spends on products goes toward things made, grown, or assembled right here in the U.S. Who knew?",
+          "As part of Walmart’s Who Knew? campaign, we wanted to put some real faces (and stories) behind that stat. So we teamed up with Fire Department Coffee, a veteran-owned, firefighter-run coffee company that went from Walmart’s Open Call to shelves nationwide.",
+          "We put the company’s two real-life founders in front of the camera for their commercial debut, letting them tell their story in their own words. From what Walmart’s support has meant for their growing business to what that growth has allowed them to give back to their community, we showed how supporting American businesses can have an impact well beyond the store shelves."
+        ]},
+        {"type": "video", "id": "1245550599", "h": "fd96c40026", "ratio": "16/9", "title": "Walmart: Fire Dept. Coffee"}
+      ]
+    },
+    {
       "slug": "chips-ahoy",
       "title": "Chips Ahoy!",
       "thumb": "thumb-chips-ahoy.webp",
       "blocks": [
+        {"type": "text", "html": [
+          "What happens when America’s favorite chocolate chip cookie decides it’s time for an upgrade? A journey of self-improvement — or as we called it, MMMprovement — to become even more delicious. And who better to help get the word out than the queen of self-improvement (and hilarious interviews) herself, Keke Palmer.",
+          "We created a campaign that gave our recipe the full media run, PR treatment, with Chip as our charismatic star, and Keke Palmer in the role she was born to play: a talk show host. Starting with :15s that ran on CTV and socials, we also blew it out with brand content and two paid social videos on Keke’s pages, visually fitting right in with her beloved content."
+        ]},
         {"type": "video", "id": "1002847484", "h": "83ff141157", "ratio": "16/9", "title": "Kekefied Cookie"},
         {"type": "video", "id": "1002847526", "h": "464d11a326", "ratio": "16/9", "title": "Kekefied Name"},
         {"type": "video", "id": "1002847269", "h": "1042121e0f", "ratio": "16/9", "title": "Check Chip Out"},

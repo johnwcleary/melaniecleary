@@ -32,6 +32,6 @@ Block types you can use inside a project's `blocks`:
 
 The site runs on a Cloudflare Worker (`melaniecleary`, configured in `wrangler.jsonc`) that serves the `site/` folder. Cloudflare Workers Builds is connected to this repo, so every push to `main` deploys automatically. Project URLs match the old Squarespace ones (`/invisalign`, `/about`, …), so existing links keep working.
 
-`melaniecleary.com` is the main address; `www.melaniecleary.com` redirects to it through a Cloudflare Redirect Rule.
+`melaniecleary.com` is the main address. `www.melaniecleary.com` is served by the same Worker through a route (`www.melaniecleary.com/*`); each page's canonical link points search engines at `melaniecleary.com`.
 
 Videos are still hosted on Vimeo. Don't delete them from that Vimeo account.
